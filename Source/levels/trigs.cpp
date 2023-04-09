@@ -329,7 +329,7 @@ void InitLotusTriggers()
 				numtrigs++;
 			}
 			if (dPiece[i][j] == 51) {
-				trigs[numtrigs].position = { i + 1, j };
+				trigs[numtrigs].position = Point { i, j } + Displacement { 1, 0 };
 				trigs[numtrigs]._tmsg = WM_DIABNEXTLVL;
 				numtrigs++;
 			}
