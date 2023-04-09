@@ -65,7 +65,7 @@ std::string GetLocationString()
 	}
 
 	// Dungeon Name
-	constexpr std::array<const char *, DTYPE_LAST + 1> DungeonStrs = { N_("Town"), N_("Cathedral"), N_("Catacombs"), N_("Caves"), N_("Hell"), N_("Nest"), N_("Crypt") };
+	constexpr std::array<const char *, DTYPE_LAST + 1> DungeonStrs = { N_("Town"), N_("Cathedral"), N_("Catacombs"), N_("Caves"), N_("Hell"), N_("Nest"), N_("Crypt"), N_("Lotus Temple") };
 	std::string dungeonStr;
 	if (tracked_data.dungeonArea != DTYPE_NONE) {
 		dungeonStr = _(DungeonStrs[tracked_data.dungeonArea]);
